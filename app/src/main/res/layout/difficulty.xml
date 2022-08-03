@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+
+android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:textColor="@color/purple_500"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="Select Difficulty"
+        />
+
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/veryEasy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toddler (x + y)\n1 Point / Correct answer\nMinimum 5 seconds per question"
+            android:layout_margin="10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/easy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Easy (xx + yy)\n2 Points / Correct answer\nMinimum 10 seconds per question"
+            android:layout_margin="10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medium (xx - yy + zz)\n4 Points / Correct answer\nMinimum 15 seconds per question"
+            android:layout_margin="10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/hard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hard [(xx + yy) x z]\n5 Points / Correct answer\nMinimum 20 seconds per question"
+            android:layout_margin="10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/veryHard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Extreme [(xxx + yyy) x z]\n10 Points / Correct answer\nMinimum 25 seconds per question"
+            android:layout_margin="10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/asian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Impossible [(xxx + yyy) x zz]\n20 Points / Correct answer\nMinimum 30 seconds per question"
+            android:layout_margin="10dp"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:text="Notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginStart="15dp"
+        android:text="1. 'Toddler' and 'Easy' difficulties have only (+)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </TextView>
+
+    <TextView
+        android:layout_marginStart="15dp"
+        android:text="2. 'Medium' difficulty has only (+) and (-)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:layout_marginStart="15dp"
+        android:text="3. 'Hard' difficulty onwards uses operators (+), (-), and (x)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
+</LinearLayout>
